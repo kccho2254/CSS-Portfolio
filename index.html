@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin C Cho</title>
+    
+</head>
+
+<body>
+    
+    <header>
+        <h3 class="justify-center">Welcome to my Webpage!</h3>
+        <h1>Kevin Cho</h1>
+        <nav class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <slot class="dropdown-content">
+                    <a href="#aboutme">Home</a>
+               
+                    <a href="#projectone">Projects</a>
+                
+                    <a href="Contact">Contact</a>
+            
+            </slot>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="aboutme" id="aboutme">
+                <h2>About Me</h2>
+                <p>4th year student at St. Edwards pursuing a BA in philosophy and certificate for The Coding Bootcamp at UT Austin in Web Development. I found love for Web Development after hearing about so many good prospects and potential for collaboration from close friends, through this program I aim for profiency in HTML, CSS, Javascript, React, Node.js, Bootstrap, MongoDB, PHP frameworks, MySQL, Heroku, Security and Session Storage, and User Authentication.
+                </p>
+        </section>
+
+        <div class="row justify-center">
+            <section class="projectone" id="projectone">
+                <img src="./Assets/images/pexels-negative-space-160107.jpg" alt="Laptop">
+
+            </section>
+
+            <section class="projecttwo">
+                <img src="./Assets/images/pexels-quintin-gellar-313782.jpg" alt="Cityscape">
+
+            </section>
+
+            <section class="projectthree">
+                <img src="./Assets/images/pexels-simon-migaj-747964.jpg" alt="BloodGulch">
+
+            </section>
+
+            <section class="projectfour">
+                <img src="./Assets/images/pexels-stephan-seeber-1261728.jpg" alt="Mountains">
+
+            </section>
+        </div>
+    </main>
+
+
+
+</body>
+</html>
