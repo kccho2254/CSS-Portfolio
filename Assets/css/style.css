@@ -1,63 +1,67 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background-image: url('../images/previewfile_1171923945.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100%;
+  margin: 0;
 }
 
-header h3 {
+/* Header, nav bar */
+
+header {
   display: flex;
-  background-color: rgb(170, 184, 170);
-  font-family: Tahoma, sans-serif;
-  text-shadow: white 2px 2px;
-  padding: 10px 0px 10px 0px;
-  border-radius: 25px;
-  opacity: .9;
+  flex-wrap: wrap;
+  justify-content: center
 }
 
 header h1 {
-  margin: 1px 70% 15px 1px;
   display: flex;
-  padding: 1rem 2rem 1rem 2rem;
-  background-color: rgb(170, 184, 170);
+  margin: 0px;
+  padding: 1rem 33px 1rem 2rem;
   font-weight: lighter;
-  text-shadow: white 2px 2px;
-  border-radius: 25px;
+  color: white;
+  text-shadow: black 2px 2px;
   opacity: .9;  
 }
 
-.aboutme {
-  margin: 30px;
-  padding: 1px 0px 40px 20px;
-  height: 200px;
-  background-color: rgb(170, 184, 170);
-  border-radius: 25px;
-  opacity: .9;
-}
-
-.aboutme h2 {
-  font-family: Tahoma, sans-serif;
-  color: black;
-  text-shadow: white 1px 1px;
-  
+header h4 {
+  color: white;
+  text-shadow: black 2px 2px;
   font-weight: lighter;
+  opacity: .9;  
+  margin: 20px;
 }
 
-.aboutme p {
-  font-family: Tahoma, sans-serif;
-  color: black;
-  text-shadow: white 1px 1px;
+header ul {
+  margin: 0;
+  padding-bottom: 0;
 }
 
-.dropbtn {
+    /*       _
+        .__(.)< (MEOW)
+          \___)   
+  ~~~~~~~~~~~~~~~~~~*/ 
+
+  header img {
+    max-height: 200px;
+  }
+
+  .dropbtn {
     background-color: rgb(170, 184, 170);
-    color: black;
-    text-shadow: white 1px 1px;
+    color: white;
+    text-shadow: black 1px 1px;
     padding: 16px;
-    margin-left: 16px;
+    margin-top: 10px;
     font-size: 16px;
     border: none;
     border-radius: 25px;
+    opacity: .9;
   }
   
   .dropdown {
@@ -74,6 +78,7 @@ header h1 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 25px;
+    opacity: .9;
   }
   
   .dropdown-content a {
@@ -82,11 +87,13 @@ header h1 {
     text-decoration: none;
     display: block;
     border-radius: 25px;
+    opacity: .9;
   }
-  
+    
   .dropdown-content a:hover {
     background-color: #ddd;
     border-radius: 25px;
+    opacity: .9;
   }
   
   .dropdown:hover .dropdown-content {
@@ -99,41 +106,151 @@ header h1 {
     border-radius: 25px;
   }
 
+/* ABOUT ME */
+
+  .aboutme {
+    margin: 1px 40px 5px 40px;
+    padding: 1px 0px 40px 20px;
+    height: 200px;
+    background-color: rgb(170, 184, 170);
+    border-radius: 25px;
+    opacity: .9;
+  }
+  
+  .aboutme h2 {
+    font-family: Tahoma, sans-serif;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-weight: lighter;
+  }
+
+  .aboutme a {
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+  .aboutme p {
+    font-family: Tahoma, sans-serif;
+    color: white;
+    text-shadow: black 1px 1px;
+    margin: 15px;
+  }
+  
   .row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+  }
+
+  .row p {
+    margin: 1px 10px 5px 10px;
+    padding: 15px 15px 15px 15px;
+    opacity: .9;
+    border-radius: 15px;
+    color: white;
+    text-shadow: black 1px 1px;
+    background-color: rgb(170, 184, 170);
+  }
+
+  .row a {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  .column {
+    flex: 30%;
+    padding: 5px;
   }
 
   .justify-center {
     justify-content: center;
+
   }
+
+  /* Project images start here */
 
   .projectone img {
     margin: 10px;
-    max-width: 450px;
-    border-radius: 25px;
+    width: 450px;
+    height: 300px;
+ 
 
   }
 
   .projecttwo img {
     margin: 10px;
-    max-width: 450px;
-    border-radius: 25px;
+    width: 450px;
+    height: 300px;
 
   }
 
   .projectthree img {
     margin: 10px;
-    max-width: 450px;
-    border-radius: 25px;
+    width: 450px;
+    height: 300px;
+
 
   }
 
   .projectfour img {
     margin: 10px;
-    max-width: 450px;
-    border-radius: 25px;
+    width: 450px;
+    height: 300px;
 
+  }
+
+  /* Contact Form is here */
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: rgb(170, 184, 170);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 50px 1px 50px 1px;
+    opacity: .9;
+  }
+
+  /* Footer Code here */
+
+  footer section img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    opacity: .9;
+  }
+
+  footer section {
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+  }
+
+  .footer {
+    background-color: white;
+    height: 50px;
+    margin: 1px 1px -30px 1px;
+    opacity: .9;
   }
