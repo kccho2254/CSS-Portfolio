@@ -50,6 +50,8 @@ header ul {
 
   header img {
     max-height: 200px;
+    border-radius: 15px;
+    margin: 15px;
   }
 
   .dropbtn {
@@ -68,6 +70,7 @@ header ul {
     position: relative;
     display: inline-block;
     border-radius: 25px;
+    margin: 15px;
   }
   
   .dropdown-content {
