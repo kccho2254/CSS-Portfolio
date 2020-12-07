@@ -141,8 +141,8 @@
             </div>
         </main>
 
-        <div class="container" id="Contact">
-            <form action="mailto:kccho2254@gmail.com" method="”POST”" enctype="”multipart/form-data”" name="”EmailForm”">
+        <!-- <div class="container" id="Contact">
+            <form action=""https://formspree.io/f/{form_id}"" method="post" enctype="”multipart/form-data”" name="”EmailForm”">
 
 
                 <label for="fname">First Name</label>
@@ -168,7 +168,20 @@
                 <input type="submit" value="Submit">
 
             </form>
-        </div>
+        </div> -->
+
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgoygyo" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" style="font-family: inherit;" placeholder="First and Last" required="">
+              <label for="email-address">Email Address</label><br>
+              <input type="email" name="_replyto" id="email-address" style="font-family: inherit;" placeholder="email@domain.tld" required=""><br>
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" style="font-family: inherit;" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Send" style="font-family:inherit; margin-left: 14px; margin-bottom: 4px;">
+          </form>
 
         <footer>
             <section class="row justify-center">

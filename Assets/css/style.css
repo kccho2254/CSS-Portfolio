@@ -4,6 +4,7 @@ html {
   font-family: "Texturina"!important;
 
 }
+
 body {
   background-image: url('../images/previewfile_1171923945.jpg');
   background-repeat: no-repeat;
@@ -231,19 +232,28 @@ header ul {
     height: 300px;
   }
   /* Contact Form is here */
+  
+  form#fs-frm {
+    background-color: white;
+    opacity: .9;
+  }
+
+  fieldset {
+    border: none;
+    padding-bottom: 0px;
+  }
 
   input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px;
     box-sizing: border-box; 
     margin-top: 6px; 
-    margin-bottom: 16px;
+    margin-bottom: 4px;
     resize: vertical 
   }
   
-  input[type=submit] {
+  input[type="submit" i] {
+    
     background-color: rgb(159, 184, 159);
     color: white;
     padding: 12px 20px;
