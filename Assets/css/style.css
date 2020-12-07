@@ -4,7 +4,6 @@ html {
   font-family: "Texturina"!important;
 
 }
-
 body {
   background-image: url('../images/previewfile_1171923945.jpg');
   background-repeat: no-repeat;
@@ -219,26 +218,18 @@ header ul {
     width: 450px;
     height: 300px;
   }
-
   .projecttwo img {
     width: 450px;
     height: 300px;
-
   }
-
   .projectthree img {
     width: 450px;
     height: 300px;
-
-
   }
-
   .projectfour img {
     width: 450px;
     height: 300px;
-
   }
-
   /* Contact Form is here */
 
   input[type=text], select, textarea {
