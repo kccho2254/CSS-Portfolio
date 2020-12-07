@@ -11,7 +11,9 @@ https://github.com/kccho2254/kccho2254.github.io
 ![screenshot](./Assets/images/screenshot.png)
 
 # Credits
+## [w3schools](https://www.w3schools.com/html/html_forms.asp)
 
+Formspree is a free web API for contact forms of various kinds!
 ## [w3schools](https://www.w3schools.com/html/html_forms.asp)
 
 The structure for the contact form came from this website
